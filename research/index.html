@@ -257,6 +257,27 @@
   .project-details.show {
     max-height: 500px; /* Animate to this height. Adjust if you have a lot of content */
   }
+
+  /* Adjustment for phone/pad viewing */
+  @media (max-width: 768px) {
+  .project-box,
+  .project-box.reverse {
+    flex-direction: column;  /* Stack image above text */
+    align-items: center;     /* Center content horizontally */
+  }
+
+  .project-image img {
+    max-width: 100%;         /* Let image fill the width */
+    width: auto;
+    height: auto;
+  }
+
+  .project-text {
+    width: 100%;
+    text-align: left;        /* Optional: left-align text on mobile */
+  }
+}
+
 </style>
 
 
